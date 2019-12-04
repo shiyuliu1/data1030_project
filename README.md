@@ -1,30 +1,31 @@
-# data1030_project
+# Data1030 Project-- Breast Cancer Wisconsin 
 This repository includes everything of the DATA 1030 project. 
 
-This project takes Breast Cancer Wiskonsin as the data set to explore different machine learning algorithms by analyzing their accuracy and sensitivity.
-Codes were developed using Python 3.7.3
+Forecasting breast cancer can significantly increase the survival rate of patients, and classifying the sample tumor cells as malignant or benign is one of the best and most direct ways to make accurate predictions. 
 
-#### Package requried for the code:
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import OrdinalEncoder
-from sklearn.preprocessing import LabelEncoder
-import matplotlib
-from matplotlib import pylab as plt
-from sklearn.feature_selection import SelectKBest
-from sklearn.feature_selection import f_classif, mutual_info_classif
-from sklearn.svm import SVC
-import xgboost as xgb
 
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
-from sklearn.pipeline import make_pipeline
-from sklearn.metrics import make_scorer, accuracy_score
-from sklearn.model_selection import StratifiedKFold
+This project takes Breast Cancer Wisconsin as the data set to explore different machine learning algorithms by analyzing their accuracy and sensitivity. The dataset was obtained from UCI machine learning Repository(https://archive.ics.uci.edu/ml/index.php). The features are the cytological features obtained by Fine Needle Aspirations. The target variable is the diagnosis of the tumor cell type, being malignant or benign. 
 
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
+
+Enlightened by previous studies, this study uses Lasso logistic Regression, random forest, boosting algorithms, support vector machine classifier and Naive Bayes as the machine learning algorithms.  
+
+
+Python version: 
+
+Python 3.7.3
+
+Package and version requried for the code:
+
+catboost==0.20
+
+seaborn==0.9.0
+
+xgboost==0.90
+
+numpy==1.17.1
+
+pandas==0.25.0
+
+scikit-learn==0.21.3
+
+matplotlib==3.1.1
